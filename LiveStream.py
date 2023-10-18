@@ -28,4 +28,6 @@ def video():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    
+    # ZMEN SI IPECKU PODLA SVOJHO PC
+    app.run(host='192.168.x.x', port=5000, debug=True)
