@@ -56,18 +56,18 @@ def index():
         <title>Live Screen</title>
         <style>
             body {
-                background-color: red;
+                background-color: yellow;
                 text-align: center;
             }
             #screenshot {
-                border: 30px solid black;
-                border-radius: 30%;  /* Zaoblenie rohov */
+                border: 3px solid purple;
+                border-radius: 3%;  /* Zaoblenie rohov */
                 max-width: 100%;
             }
         </style>
     </head>
     <body>
-        <img id="screenshot" alt="Current Screenshot" style="width: 600px; height: 300px; display: block; margin: 0 auto; margin-top: 200px;">
+        <img id="screenshot" alt="Antualny Screenshot obrazovky" style="width: 1500px; height: 850px; display: block; margin: 0 auto; margin-top: 30px;">
         <script>
             function loadScreenshot() {
                 var screenshotElement = document.getElementById('screenshot');
