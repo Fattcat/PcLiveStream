@@ -67,14 +67,14 @@ def index():
         </style>
     </head>
     <body>
-        <button onclick="loadScreenshot()">Load New Screenshot</button>
-        <br>
-        <img id="screenshot" src="/current_screenshot" alt="Current Screenshot" style="width: 600px; height: 300px; display: block; margin: 0 auto; margin-top: 200px;">
+        <img id="screenshot" alt="Current Screenshot" style="width: 600px; height: 300px; display: block; margin: 0 auto; margin-top: 200px;">
         <script>
             function loadScreenshot() {
                 var screenshotElement = document.getElementById('screenshot');
                 screenshotElement.src = "/current_screenshot?" + new Date().getTime();
             }
+            loadScreenshot();  // Načítanie screenshotu pri načítaní stránky
+            setInterval(loadScreenshot, 2000);  // Automatická aktualizácia každých 2 sekúnd
         </script>
     </body>
     </html>
