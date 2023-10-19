@@ -43,12 +43,12 @@ def index():
         <title>Live Screen</title>
         <style>
             body {
-                background-color: red;
+                background-color: black;
                 text-align: center;
             }
             #screenshot {
-                border: 6px solid black;
-                border-radius: 2%;  /* Zaoblenie rohov */
+                border: 3px solid purple;
+                border-radius: 0%;  /* Zaoblenie rohov */
                 max-width: 100%;
             }
         </style>
