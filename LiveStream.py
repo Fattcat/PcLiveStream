@@ -56,7 +56,7 @@ def index():
     <body>
         <button onclick="loadScreenshot()">Load New Screenshot</button>
         <br>
-        <img id="screenshot" src="/current_screenshot" alt="Current Screenshot" style="width: 1200px; height: 800px; display: block; margin: 0 auto; margin-top: 200px;">
+        <img id="screenshot" src="/current_screenshot" alt="Current Screenshot" style="width: 1500px; height: 850px; display: block; margin: 0 auto; margin-top: 10px;">
         <script>
             function loadScreenshot() {
                 var screenshotElement = document.getElementById('screenshot');
